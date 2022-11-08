@@ -11,9 +11,15 @@ from ib_insync import *
 from collections import deque
 from enum import Enum
 import datetime
+import logging
 # util.startLoop()
 
 contract_dict = {'Stock':Stock, 'Crypto':Crypto}
+
+today = datetime.datetime.today().date()
+logging.basicConfig(level = logging.INFO,
+                   filename = 'algo_log_'+str(today)+'_.log',
+                   filemode='w')
 
 class Algo():
     def __init__(self, client, addr, port, client_id):
@@ -57,11 +63,10 @@ class Algo():
     
     
     def GetMovingAverages(self, df, low, high, plot=True):
-#         print('length:', len(df))
         df_MA = df.copy()
         if len(df) < high:
             return
-#         display('in mov avg fn', df_MA)
+
         
         df_MA[str(low)+'_average'] = df.close.rolling(low).mean()
         df_MA[str(high)+'_average'] = df.close.rolling(high).mean()
@@ -188,6 +193,8 @@ class Account():
         self.USD_balance -= self.BTC_balance * self.BTC_price
     
     def tradeBTC(self, signal: Signal, quantity: int, date: datetime): #-> order:
+        logging.info(str(signal), str(quantity)+' @ ', str(self.BTC_price))
+        
         direction = 1 if signal==Signal.BUY else -1
         
         self.BTC_balance += direction * quantity
@@ -197,9 +204,8 @@ class Account():
         
         order = LimitOrder(order_type, quantity, round(self.BTC_price, 0),
                            tif='GTC')
-        return order 
-        
-#         self.updateBalance([date, self.USD_balance, self.BTC_balance, self.total])
+        return order         
+
                 
     def updateBalance(self, date):
         total = self.USD_balance + self.BTC_balance * self.BTC_price
@@ -211,7 +217,18 @@ class Account():
     
     def plotBalance(self):
         self.df_account.plot(x='Date', y=['Account Value'])
+        
+        
 
+strategy_dict = dict()
+
+def AddStrategy(strategy_fn):
+    strategy_dict[strategy_fn.__name__] = strategy_fn
+    return strategy_fn
+  
+def LogFunctionCall(fn):
+    logging.info(fn.__name__+' called')
+    return fn
 
 
 class Strategy():
@@ -227,25 +244,34 @@ class Strategy():
         self.signal = dict()
         self.trades = list()
         self.low_deque = deque()
-        self.high_deque = deque()
-    # contract = Forex('EURUSD')    
+        self.high_deque = deque()         
 
     def onBarUpdate(self, bars, newBar):
-        print(bars)
-        print('on bar update', bars[-1])
-        self.low_deque.append(bars[-1].close)
-        self.high_deque.append(bars[-1].close)
-        self.account.updateBTCPrice(BTC_price=bars[-1].close)
-        self.MovingAverage(self.low_deque, self.high_deque, bars[-1].close)
-        self.SignalProcess('MA', date=bars[-1].time)
+        if newBar:
+#             print(bars)
+            print('on bar update', bars[-1])
+            self.strategy_params['close'] = bars[-1].close 
+            self.strategy(**self.strategy_params)
+            self.SignalProcess(self.strategy.__name__, date=bars[-1].time)
     
 
-    def MovingAverage(self, low_deque, high_deque, closing_value):
-        if len(high_deque) < high_deque.maxlen:
+    @AddStrategy
+    @LogFunctionCall
+    def MovingAverage(self, low, high, close):
+        
+        if not (hasattr(self, "low_deque") and hasattr(self, "high_deque")):
+            low_deque_len, high_deque_len = low, high
+            self.low_deque = deque(maxlen=low_deque_len)
+            self.high_deque = deque(maxlen=high_deque_len)       
+                
+        self.low_deque.append(close)
+        self.high_deque.append(close)
+        self.account.updateBTCPrice(BTC_price=close)        
+        
+        if len(self.high_deque) < self.high_deque.maxlen:
             return
-        low_avg = sum(low_deque)/len(low_deque)
-        high_avg = sum(high_deque)/len(high_deque)
-
+        low_avg = sum(self.low_deque)/len(self.low_deque)
+        high_avg = sum(self.high_deque)/len(self.high_deque)
 
         if low_avg < high_avg:
             current_sentiment_MA = Sentiment.BEAR
@@ -254,7 +280,8 @@ class Strategy():
         else:
             current_sentiment_MA = Sentiment.NEUTRAL
         
-
+        print('low avg:', low_avg, 'high avg:', high_avg)
+        
         if self.sentiment.get('MA') is None:
             print('1st change')
             self.sentiment['MA'] = current_sentiment_MA
@@ -268,13 +295,15 @@ class Strategy():
                 self.signal['MA'] = Signal.SELL               
 
             elif current_sentiment_MA == Sentiment.BULL:
-                self.signal['MA'] = Signal.BUY
+                self.signal['MA'] = Signal.BUY            
+            print(self.signal['MA'])
         else:
             print('no trades')
                               
         self.sentiment['MA'] = current_sentiment_MA
         print('current sentiment: ', current_sentiment_MA)
-        
+    
+    @LogFunctionCall
     def SignalProcess(self, *signals, date):
         signal_list = [values for keys,values in self.signal.items() if keys in signals]
 
@@ -294,21 +323,26 @@ class Strategy():
     
     def ClearSignals(self, *signals):
         for s in signals:
-            self.signal[s]=None                  
+            self.signal[s]=None      
+
+    def SetStrategy(self, strategy, **kwargs):
+#         self.strategy_name=strategy
+        self.strategy = strategy_dict[strategy]
+        self.strategy_params = kwargs
+        self.strategy_params['self'] = self           
 
     
     def RunStrategy(self):       
        
-        low, high = 5, 10
-        self.low_deque = deque(maxlen=low)
-        self.high_deque = deque(maxlen=high)
+        # low, high = 5, 10
+        # self.low_deque = deque(maxlen=low)
+        # self.high_deque = deque(maxlen=high)
 
         bars = self.ib.reqRealTimeBars(contract=self.contract,
                                   barSize=5,
                                   whatToShow='MIDPOINT',
                                  useRTH=False)
         bars.updateEvent += self.onBarUpdate
-
 
         self.ib.sleep(20)
         self.ib.cancelRealTimeBars(bars)        

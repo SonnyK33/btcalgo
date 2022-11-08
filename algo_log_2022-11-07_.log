@@ -1,0 +1,2 @@
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 167 B sent in 8 messages, 18.5 kB received in 391 messages, session time 2.35 ks.
+INFO:ib_insync.client:Disconnecting

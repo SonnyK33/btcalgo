@@ -13,3 +13,4 @@ INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:u
 INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
 INFO:ib_insync.client:API connection ready
 INFO:ib_insync.ib:Synchronization complete
+ERROR:ib_insync.client:Peer closed connection.
