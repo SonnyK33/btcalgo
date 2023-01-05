@@ -23,3 +23,714 @@ INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is in
 INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.jfarm
 INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.eufarmnj
 INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.eufarmnj
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 2...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 3...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 4...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 46713.5
+INFO:root:Signal.SELL, 1 @, 48667.875
+INFO:root:Signal.BUY, 1 @, 48647.125
+INFO:root:Signal.SELL, 1 @, 47340.625
+INFO:root:Signal.BUY, 1 @, 49328.375
+INFO:root:Signal.SELL, 1 @, 46702.25
+INFO:root:Signal.BUY, 1 @, 48094.875
+INFO:root:Signal.SELL, 1 @, 47508.375
+INFO:root:Signal.BUY, 1 @, 44796.875
+INFO:root:Signal.SELL, 1 @, 43050.875
+INFO:root:Signal.BUY, 1 @, 43586.625
+INFO:root:Signal.SELL, 1 @, 54699.875
+INFO:root:Signal.BUY, 1 @, 57513.125
+INFO:root:Signal.SELL, 1 @, 57268.125
+INFO:root:Signal.BUY, 1 @, 57857.125
+INFO:root:Signal.SELL, 1 @, 61000.125
+INFO:root:Signal.BUY, 1 @, 61993.875
+INFO:root:Signal.SELL, 1 @, 59103.625
+INFO:root:Signal.BUY, 1 @, 62539.375
+INFO:root:Signal.SELL, 1 @, 61271.875
+INFO:root:Signal.BUY, 1 @, 66084.875
+INFO:root:Signal.SELL, 1 @, 64847.5
+INFO:root:Signal.BUY, 1 @, 57424.875
+INFO:root:Signal.SELL, 1 @, 54562.375
+INFO:root:Signal.BUY, 1 @, 57500.0
+INFO:root:Signal.SELL, 1 @, 56810.125
+INFO:root:Signal.BUY, 1 @, 50774.125
+INFO:root:Signal.SELL, 1 @, 47686.125
+INFO:root:Signal.BUY, 1 @, 49235.625
+INFO:root:Signal.SELL, 1 @, 46203.625
+INFO:root:Signal.BUY, 1 @, 48637.625
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 46279.125
+INFO:root:Signal.SELL, 1 @, 43960.25
+INFO:root:Signal.BUY, 1 @, 42797.625
+INFO:root:Signal.SELL, 1 @, 43141.875
+INFO:root:Signal.BUY, 1 @, 42707.875
+INFO:root:Signal.SELL, 1 @, 38378.75
+INFO:root:Signal.BUY, 1 @, 38499.125
+INFO:root:Signal.SELL, 1 @, 37608.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 42347.625
+INFO:root:Signal.BUY, 1 @, 44163.375
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 38411.75
+INFO:root:Signal.SELL, 1 @, 42026.375
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38367.875
+INFO:root:Signal.BUY, 1 @, 39747.875
+INFO:root:Signal.SELL, 1 @, 42307.125
+INFO:root:Signal.BUY, 1 @, 42249.375
+INFO:root:Signal.SELL, 1 @, 47075.125
+INFO:root:Signal.BUY, 1 @, 45955.625
+INFO:root:Signal.SELL, 1 @, 46028.625
+INFO:root:Signal.BUY, 1 @, 41086.375
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 40689.875
+INFO:root:Signal.SELL, 1 @, 41245.125
+INFO:root:Signal.BUY, 1 @, 39966.375
+INFO:root:Signal.SELL, 1 @, 38542.875
+INFO:root:Signal.BUY, 1 @, 39844.375
+INFO:root:Signal.SELL, 1 @, 35977.875
+INFO:root:Signal.BUY, 1 @, 30041.875
+INFO:root:Signal.SELL, 1 @, 30057.875
+INFO:root:Signal.BUY, 1 @, 29251.125
+INFO:root:Signal.SELL, 1 @, 29938.875
+INFO:root:Signal.BUY, 1 @, 29272.875
+INFO:root:Signal.SELL, 1 @, 29061.875
+INFO:root:Signal.BUY, 1 @, 29552.875
+INFO:root:Signal.SELL, 1 @, 28854.875
+INFO:root:Signal.BUY, 1 @, 30623.625
+INFO:root:Signal.SELL, 1 @, 30270.625
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 30121.125
+INFO:root:Signal.BUY, 1 @, 20106.375
+INFO:root:Signal.SELL, 1 @, 20894.875
+INFO:root:Signal.BUY, 1 @, 21233.375
+INFO:root:Signal.SELL, 1 @, 20245.125
+INFO:root:Signal.BUY, 1 @, 19804.375
+INFO:root:Signal.SELL, 1 @, 20491.0
+INFO:root:Signal.BUY, 1 @, 20593.875
+INFO:root:Signal.SELL, 1 @, 22599.5
+INFO:root:Signal.BUY, 1 @, 23798.25
+INFO:root:Signal.SELL, 1 @, 22965.875
+INFO:root:Signal.BUY, 1 @, 23466.875
+INFO:root:Signal.SELL, 1 @, 22947.875
+INFO:root:Signal.BUY, 1 @, 23928.625
+INFO:root:Signal.SELL, 1 @, 23623.125
+INFO:root:Signal.BUY, 1 @, 24218.875
+INFO:root:Signal.SELL, 1 @, 23989.375
+INFO:root:Signal.BUY, 1 @, 21720.875
+INFO:root:Signal.SELL, 1 @, 20660.625
+INFO:root:Signal.BUY, 1 @, 19876.625
+INFO:root:Signal.SELL, 1 @, 19920.125
+INFO:root:Signal.BUY, 1 @, 19357.875
+INFO:root:Signal.SELL, 1 @, 19962.875
+INFO:root:Signal.BUY, 1 @, 19302.625
+INFO:root:Signal.SELL, 1 @, 19192.375
+INFO:root:Signal.BUY, 1 @, 19080.625
+INFO:root:Signal.SELL, 1 @, 19490.625
+INFO:root:Signal.BUY, 1 @, 19536.625
+INFO:root:Signal.SELL, 1 @, 20016.125
+INFO:root:Signal.BUY, 1 @, 19376.375
+INFO:root:Signal.SELL, 1 @, 19528.375
+INFO:root:Signal.BUY, 1 @, 19213.375
+INFO:root:Signal.SELL, 1 @, 19231.375
+INFO:root:Signal.BUY, 1 @, 19343.125
+INFO:root:Signal.SELL, 1 @, 20615.375
+INFO:root:Signal.BUY, 1 @, 21108.625
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 16574.5
+INFO:root:Signal.SELL, 1 @, 16249.5
+INFO:root:Signal.BUY, 1 @, 16565.75
+INFO:root:Signal.SELL, 1 @, 16678.375
+INFO:root:Signal.BUY, 1 @, 16616.375
+INFO:root:Signal.SELL, 1 @, 15773.125
+INFO:root:Signal.BUY, 1 @, 16609.875
+INFO:root:Signal.SELL, 1 @, 16519.875
+INFO:root:Signal.BUY, 1 @, 17095.375
+INFO:root:Signal.SELL, 1 @, 17031.625
+INFO:root:Signal.BUY, 1 @, 16938.625
+INFO:root:Signal.SELL, 1 @, 16993.625
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17121.375
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 17713.875
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 5...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 6...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 46713.5
+INFO:root:Signal.SELL, 1 @, 48667.875
+INFO:root:Signal.BUY, 1 @, 48647.125
+INFO:root:Signal.SELL, 1 @, 47340.625
+INFO:root:Signal.BUY, 1 @, 49328.375
+INFO:root:Signal.SELL, 1 @, 46702.25
+INFO:root:Signal.BUY, 1 @, 48094.875
+INFO:root:Signal.SELL, 1 @, 47508.375
+INFO:root:Signal.BUY, 1 @, 44796.875
+INFO:root:Signal.SELL, 1 @, 43050.875
+INFO:root:Signal.BUY, 1 @, 43586.625
+INFO:root:Signal.SELL, 1 @, 54699.875
+INFO:root:Signal.BUY, 1 @, 57513.125
+INFO:root:Signal.SELL, 1 @, 57268.125
+INFO:root:Signal.BUY, 1 @, 57857.125
+INFO:root:Signal.SELL, 1 @, 61000.125
+INFO:root:Signal.BUY, 1 @, 61993.875
+INFO:root:Signal.SELL, 1 @, 59103.625
+INFO:root:Signal.BUY, 1 @, 62539.375
+INFO:root:Signal.SELL, 1 @, 61271.875
+INFO:root:Signal.BUY, 1 @, 66084.875
+INFO:root:Signal.SELL, 1 @, 64847.5
+INFO:root:Signal.BUY, 1 @, 57424.875
+INFO:root:Signal.SELL, 1 @, 54562.375
+INFO:root:Signal.BUY, 1 @, 57500.0
+INFO:root:Signal.SELL, 1 @, 56810.125
+INFO:root:Signal.BUY, 1 @, 50774.125
+INFO:root:Signal.SELL, 1 @, 47686.125
+INFO:root:Signal.BUY, 1 @, 49235.625
+INFO:root:Signal.SELL, 1 @, 46203.625
+INFO:root:Signal.BUY, 1 @, 48637.625
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 46279.125
+INFO:root:Signal.SELL, 1 @, 43960.25
+INFO:root:Signal.BUY, 1 @, 42797.625
+INFO:root:Signal.SELL, 1 @, 43141.875
+INFO:root:Signal.BUY, 1 @, 42707.875
+INFO:root:Signal.SELL, 1 @, 38378.75
+INFO:root:Signal.BUY, 1 @, 38499.125
+INFO:root:Signal.SELL, 1 @, 37608.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 42347.625
+INFO:root:Signal.BUY, 1 @, 44163.375
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 38411.75
+INFO:root:Signal.SELL, 1 @, 42026.375
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38367.875
+INFO:root:Signal.BUY, 1 @, 39747.875
+INFO:root:Signal.SELL, 1 @, 42307.125
+INFO:root:Signal.BUY, 1 @, 42249.375
+INFO:root:Signal.SELL, 1 @, 47075.125
+INFO:root:Signal.BUY, 1 @, 45955.625
+INFO:root:Signal.SELL, 1 @, 46028.625
+INFO:root:Signal.BUY, 1 @, 41086.375
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 40689.875
+INFO:root:Signal.SELL, 1 @, 41245.125
+INFO:root:Signal.BUY, 1 @, 39966.375
+INFO:root:Signal.SELL, 1 @, 38542.875
+INFO:root:Signal.BUY, 1 @, 39844.375
+INFO:root:Signal.SELL, 1 @, 35977.875
+INFO:root:Signal.BUY, 1 @, 30041.875
+INFO:root:Signal.SELL, 1 @, 30057.875
+INFO:root:Signal.BUY, 1 @, 29251.125
+INFO:root:Signal.SELL, 1 @, 29938.875
+INFO:root:Signal.BUY, 1 @, 29272.875
+INFO:root:Signal.SELL, 1 @, 29061.875
+INFO:root:Signal.BUY, 1 @, 29552.875
+INFO:root:Signal.SELL, 1 @, 28854.875
+INFO:root:Signal.BUY, 1 @, 30623.625
+INFO:root:Signal.SELL, 1 @, 30270.625
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 30121.125
+INFO:root:Signal.BUY, 1 @, 20106.375
+INFO:root:Signal.SELL, 1 @, 20894.875
+INFO:root:Signal.BUY, 1 @, 21233.375
+INFO:root:Signal.SELL, 1 @, 20245.125
+INFO:root:Signal.BUY, 1 @, 19804.375
+INFO:root:Signal.SELL, 1 @, 20491.0
+INFO:root:Signal.BUY, 1 @, 20593.875
+INFO:root:Signal.SELL, 1 @, 22599.5
+INFO:root:Signal.BUY, 1 @, 23798.25
+INFO:root:Signal.SELL, 1 @, 22965.875
+INFO:root:Signal.BUY, 1 @, 23466.875
+INFO:root:Signal.SELL, 1 @, 22947.875
+INFO:root:Signal.BUY, 1 @, 23928.625
+INFO:root:Signal.SELL, 1 @, 23623.125
+INFO:root:Signal.BUY, 1 @, 24218.875
+INFO:root:Signal.SELL, 1 @, 23989.375
+INFO:root:Signal.BUY, 1 @, 21720.875
+INFO:root:Signal.SELL, 1 @, 20660.625
+INFO:root:Signal.BUY, 1 @, 19876.625
+INFO:root:Signal.SELL, 1 @, 19920.125
+INFO:root:Signal.BUY, 1 @, 19357.875
+INFO:root:Signal.SELL, 1 @, 19962.875
+INFO:root:Signal.BUY, 1 @, 19302.625
+INFO:root:Signal.SELL, 1 @, 19192.375
+INFO:root:Signal.BUY, 1 @, 19080.625
+INFO:root:Signal.SELL, 1 @, 19490.625
+INFO:root:Signal.BUY, 1 @, 19536.625
+INFO:root:Signal.SELL, 1 @, 20016.125
+INFO:root:Signal.BUY, 1 @, 19376.375
+INFO:root:Signal.SELL, 1 @, 19528.375
+INFO:root:Signal.BUY, 1 @, 19213.375
+INFO:root:Signal.SELL, 1 @, 19231.375
+INFO:root:Signal.BUY, 1 @, 19343.125
+INFO:root:Signal.SELL, 1 @, 20615.375
+INFO:root:Signal.BUY, 1 @, 21108.625
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 16574.5
+INFO:root:Signal.SELL, 1 @, 16249.5
+INFO:root:Signal.BUY, 1 @, 16565.75
+INFO:root:Signal.SELL, 1 @, 16678.375
+INFO:root:Signal.BUY, 1 @, 16616.375
+INFO:root:Signal.SELL, 1 @, 15773.125
+INFO:root:Signal.BUY, 1 @, 16609.875
+INFO:root:Signal.SELL, 1 @, 16519.875
+INFO:root:Signal.BUY, 1 @, 17095.375
+INFO:root:Signal.SELL, 1 @, 17031.625
+INFO:root:Signal.BUY, 1 @, 16938.625
+INFO:root:Signal.SELL, 1 @, 16993.625
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17121.375
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 7...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 46713.5
+INFO:root:Signal.SELL, 1 @, 48667.875
+INFO:root:Signal.BUY, 1 @, 48647.125
+INFO:root:Signal.SELL, 1 @, 47340.625
+INFO:root:Signal.BUY, 1 @, 49328.375
+INFO:root:Signal.SELL, 1 @, 46702.25
+INFO:root:Signal.BUY, 1 @, 48094.875
+INFO:root:Signal.SELL, 1 @, 47508.375
+INFO:root:Signal.BUY, 1 @, 44796.875
+INFO:root:Signal.SELL, 1 @, 43050.875
+INFO:root:Signal.BUY, 1 @, 43586.625
+INFO:root:Signal.SELL, 1 @, 54699.875
+INFO:root:Signal.BUY, 1 @, 57513.125
+INFO:root:Signal.SELL, 1 @, 57268.125
+INFO:root:Signal.BUY, 1 @, 57857.125
+INFO:root:Signal.SELL, 1 @, 61000.125
+INFO:root:Signal.BUY, 1 @, 61993.875
+INFO:root:Signal.SELL, 1 @, 59103.625
+INFO:root:Signal.BUY, 1 @, 62539.375
+INFO:root:Signal.SELL, 1 @, 61271.875
+INFO:root:Signal.BUY, 1 @, 66084.875
+INFO:root:Signal.SELL, 1 @, 64847.5
+INFO:root:Signal.BUY, 1 @, 57424.875
+INFO:root:Signal.SELL, 1 @, 54562.375
+INFO:root:Signal.BUY, 1 @, 57500.0
+INFO:root:Signal.SELL, 1 @, 56810.125
+INFO:root:Signal.BUY, 1 @, 50774.125
+INFO:root:Signal.SELL, 1 @, 47686.125
+INFO:root:Signal.BUY, 1 @, 49235.625
+INFO:root:Signal.SELL, 1 @, 46203.625
+INFO:root:Signal.BUY, 1 @, 48637.625
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 46279.125
+INFO:root:Signal.SELL, 1 @, 43960.25
+INFO:root:Signal.BUY, 1 @, 42797.625
+INFO:root:Signal.SELL, 1 @, 43141.875
+INFO:root:Signal.BUY, 1 @, 42707.875
+INFO:root:Signal.SELL, 1 @, 38378.75
+INFO:root:Signal.BUY, 1 @, 38499.125
+INFO:root:Signal.SELL, 1 @, 37608.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 42347.625
+INFO:root:Signal.BUY, 1 @, 44163.375
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 38411.75
+INFO:root:Signal.SELL, 1 @, 42026.375
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38367.875
+INFO:root:Signal.BUY, 1 @, 39747.875
+INFO:root:Signal.SELL, 1 @, 42307.125
+INFO:root:Signal.BUY, 1 @, 42249.375
+INFO:root:Signal.SELL, 1 @, 47075.125
+INFO:root:Signal.BUY, 1 @, 45955.625
+INFO:root:Signal.SELL, 1 @, 46028.625
+INFO:root:Signal.BUY, 1 @, 41086.375
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 40689.875
+INFO:root:Signal.SELL, 1 @, 41245.125
+INFO:root:Signal.BUY, 1 @, 39966.375
+INFO:root:Signal.SELL, 1 @, 38542.875
+INFO:root:Signal.BUY, 1 @, 39844.375
+INFO:root:Signal.SELL, 1 @, 35977.875
+INFO:root:Signal.BUY, 1 @, 30041.875
+INFO:root:Signal.SELL, 1 @, 30057.875
+INFO:root:Signal.BUY, 1 @, 29251.125
+INFO:root:Signal.SELL, 1 @, 29938.875
+INFO:root:Signal.BUY, 1 @, 29272.875
+INFO:root:Signal.SELL, 1 @, 29061.875
+INFO:root:Signal.BUY, 1 @, 29552.875
+INFO:root:Signal.SELL, 1 @, 28854.875
+INFO:root:Signal.BUY, 1 @, 30623.625
+INFO:root:Signal.SELL, 1 @, 30270.625
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 30121.125
+INFO:root:Signal.BUY, 1 @, 20106.375
+INFO:root:Signal.SELL, 1 @, 20894.875
+INFO:root:Signal.BUY, 1 @, 21233.375
+INFO:root:Signal.SELL, 1 @, 20245.125
+INFO:root:Signal.BUY, 1 @, 19804.375
+INFO:root:Signal.SELL, 1 @, 20491.0
+INFO:root:Signal.BUY, 1 @, 20593.875
+INFO:root:Signal.SELL, 1 @, 22599.5
+INFO:root:Signal.BUY, 1 @, 23798.25
+INFO:root:Signal.SELL, 1 @, 22965.875
+INFO:root:Signal.BUY, 1 @, 23466.875
+INFO:root:Signal.SELL, 1 @, 22947.875
+INFO:root:Signal.BUY, 1 @, 23928.625
+INFO:root:Signal.SELL, 1 @, 23623.125
+INFO:root:Signal.BUY, 1 @, 24218.875
+INFO:root:Signal.SELL, 1 @, 23989.375
+INFO:root:Signal.BUY, 1 @, 21720.875
+INFO:root:Signal.SELL, 1 @, 20660.625
+INFO:root:Signal.BUY, 1 @, 19876.625
+INFO:root:Signal.SELL, 1 @, 19920.125
+INFO:root:Signal.BUY, 1 @, 19357.875
+INFO:root:Signal.SELL, 1 @, 19962.875
+INFO:root:Signal.BUY, 1 @, 19302.625
+INFO:root:Signal.SELL, 1 @, 19192.375
+INFO:root:Signal.BUY, 1 @, 19080.625
+INFO:root:Signal.SELL, 1 @, 19490.625
+INFO:root:Signal.BUY, 1 @, 19536.625
+INFO:root:Signal.SELL, 1 @, 20016.125
+INFO:root:Signal.BUY, 1 @, 19376.375
+INFO:root:Signal.SELL, 1 @, 19528.375
+INFO:root:Signal.BUY, 1 @, 19213.375
+INFO:root:Signal.SELL, 1 @, 19231.375
+INFO:root:Signal.BUY, 1 @, 19343.125
+INFO:root:Signal.SELL, 1 @, 20615.375
+INFO:root:Signal.BUY, 1 @, 21108.625
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 16574.5
+INFO:root:Signal.SELL, 1 @, 16249.5
+INFO:root:Signal.BUY, 1 @, 16565.75
+INFO:root:Signal.SELL, 1 @, 16678.375
+INFO:root:Signal.BUY, 1 @, 16616.375
+INFO:root:Signal.SELL, 1 @, 15773.125
+INFO:root:Signal.BUY, 1 @, 16609.875
+INFO:root:Signal.SELL, 1 @, 16519.875
+INFO:root:Signal.BUY, 1 @, 17095.375
+INFO:root:Signal.SELL, 1 @, 17031.625
+INFO:root:Signal.BUY, 1 @, 16938.625
+INFO:root:Signal.SELL, 1 @, 16993.625
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17121.375
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 17722.625
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 53.0 kB received in 687 messages, session time 4.53 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 51.6 kB received in 654 messages, session time 3.03 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 51.4 kB received in 648 messages, session time 2.81 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 51.2 kB received in 642 messages, session time 2.40 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 40.4 kB received in 414 messages, session time 1.46 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 40.3 kB received in 410 messages, session time 1.41 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 8...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 9...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 46713.5
+INFO:root:Signal.SELL, 1 @, 48667.875
+INFO:root:Signal.BUY, 1 @, 48647.125
+INFO:root:Signal.SELL, 1 @, 47340.625
+INFO:root:Signal.BUY, 1 @, 49328.375
+INFO:root:Signal.SELL, 1 @, 46702.25
+INFO:root:Signal.BUY, 1 @, 48094.875
+INFO:root:Signal.SELL, 1 @, 47508.375
+INFO:root:Signal.BUY, 1 @, 44796.875
+INFO:root:Signal.SELL, 1 @, 43050.875
+INFO:root:Signal.BUY, 1 @, 43586.625
+INFO:root:Signal.SELL, 1 @, 54699.875
+INFO:root:Signal.BUY, 1 @, 57513.125
+INFO:root:Signal.SELL, 1 @, 57268.125
+INFO:root:Signal.BUY, 1 @, 57857.125
+INFO:root:Signal.SELL, 1 @, 61000.125
+INFO:root:Signal.BUY, 1 @, 61993.875
+INFO:root:Signal.SELL, 1 @, 59103.625
+INFO:root:Signal.BUY, 1 @, 62539.375
+INFO:root:Signal.SELL, 1 @, 61271.875
+INFO:root:Signal.BUY, 1 @, 66084.875
+INFO:root:Signal.SELL, 1 @, 64847.5
+INFO:root:Signal.BUY, 1 @, 57424.875
+INFO:root:Signal.SELL, 1 @, 54562.375
+INFO:root:Signal.BUY, 1 @, 57500.0
+INFO:root:Signal.SELL, 1 @, 56810.125
+INFO:root:Signal.BUY, 1 @, 50774.125
+INFO:root:Signal.SELL, 1 @, 47686.125
+INFO:root:Signal.BUY, 1 @, 49235.625
+INFO:root:Signal.SELL, 1 @, 46203.625
+INFO:root:Signal.BUY, 1 @, 48637.625
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 46279.125
+INFO:root:Signal.SELL, 1 @, 43960.25
+INFO:root:Signal.BUY, 1 @, 42797.625
+INFO:root:Signal.SELL, 1 @, 43141.875
+INFO:root:Signal.BUY, 1 @, 42707.875
+INFO:root:Signal.SELL, 1 @, 38378.75
+INFO:root:Signal.BUY, 1 @, 38499.125
+INFO:root:Signal.SELL, 1 @, 37608.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 42347.625
+INFO:root:Signal.BUY, 1 @, 44163.375
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 38411.75
+INFO:root:Signal.SELL, 1 @, 42026.375
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38367.875
+INFO:root:Signal.BUY, 1 @, 39747.875
+INFO:root:Signal.SELL, 1 @, 42307.125
+INFO:root:Signal.BUY, 1 @, 42249.375
+INFO:root:Signal.SELL, 1 @, 47075.125
+INFO:root:Signal.BUY, 1 @, 45955.625
+INFO:root:Signal.SELL, 1 @, 46028.625
+INFO:root:Signal.BUY, 1 @, 41086.375
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 40689.875
+INFO:root:Signal.SELL, 1 @, 41245.125
+INFO:root:Signal.BUY, 1 @, 39966.375
+INFO:root:Signal.SELL, 1 @, 38542.875
+INFO:root:Signal.BUY, 1 @, 39844.375
+INFO:root:Signal.SELL, 1 @, 35977.875
+INFO:root:Signal.BUY, 1 @, 30041.875
+INFO:root:Signal.SELL, 1 @, 30057.875
+INFO:root:Signal.BUY, 1 @, 29251.125
+INFO:root:Signal.SELL, 1 @, 29938.875
+INFO:root:Signal.BUY, 1 @, 29272.875
+INFO:root:Signal.SELL, 1 @, 29061.875
+INFO:root:Signal.BUY, 1 @, 29552.875
+INFO:root:Signal.SELL, 1 @, 28854.875
+INFO:root:Signal.BUY, 1 @, 30623.625
+INFO:root:Signal.SELL, 1 @, 30270.625
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 30121.125
+INFO:root:Signal.BUY, 1 @, 20106.375
+INFO:root:Signal.SELL, 1 @, 20894.875
+INFO:root:Signal.BUY, 1 @, 21233.375
+INFO:root:Signal.SELL, 1 @, 20245.125
+INFO:root:Signal.BUY, 1 @, 19804.375
+INFO:root:Signal.SELL, 1 @, 20491.0
+INFO:root:Signal.BUY, 1 @, 20593.875
+INFO:root:Signal.SELL, 1 @, 22599.5
+INFO:root:Signal.BUY, 1 @, 23798.25
+INFO:root:Signal.SELL, 1 @, 22965.875
+INFO:root:Signal.BUY, 1 @, 23466.875
+INFO:root:Signal.SELL, 1 @, 22947.875
+INFO:root:Signal.BUY, 1 @, 23928.625
+INFO:root:Signal.SELL, 1 @, 23623.125
+INFO:root:Signal.BUY, 1 @, 24218.875
+INFO:root:Signal.SELL, 1 @, 23989.375
+INFO:root:Signal.BUY, 1 @, 21720.875
+INFO:root:Signal.SELL, 1 @, 20660.625
+INFO:root:Signal.BUY, 1 @, 19876.625
+INFO:root:Signal.SELL, 1 @, 19920.125
+INFO:root:Signal.BUY, 1 @, 19357.875
+INFO:root:Signal.SELL, 1 @, 19962.875
+INFO:root:Signal.BUY, 1 @, 19302.625
+INFO:root:Signal.SELL, 1 @, 19192.375
+INFO:root:Signal.BUY, 1 @, 19080.625
+INFO:root:Signal.SELL, 1 @, 19490.625
+INFO:root:Signal.BUY, 1 @, 19536.625
+INFO:root:Signal.SELL, 1 @, 20016.125
+INFO:root:Signal.BUY, 1 @, 19376.375
+INFO:root:Signal.SELL, 1 @, 19528.375
+INFO:root:Signal.BUY, 1 @, 19213.375
+INFO:root:Signal.SELL, 1 @, 19231.375
+INFO:root:Signal.BUY, 1 @, 19343.125
+INFO:root:Signal.SELL, 1 @, 20615.375
+INFO:root:Signal.BUY, 1 @, 21108.625
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 16574.5
+INFO:root:Signal.SELL, 1 @, 16249.5
+INFO:root:Signal.BUY, 1 @, 16565.75
+INFO:root:Signal.SELL, 1 @, 16678.375
+INFO:root:Signal.BUY, 1 @, 16616.375
+INFO:root:Signal.SELL, 1 @, 15773.125
+INFO:root:Signal.BUY, 1 @, 16609.875
+INFO:root:Signal.SELL, 1 @, 16519.875
+INFO:root:Signal.BUY, 1 @, 17095.375
+INFO:root:Signal.SELL, 1 @, 17031.625
+INFO:root:Signal.BUY, 1 @, 16938.625
+INFO:root:Signal.SELL, 1 @, 16993.625
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17121.375
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 17722.625
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 10...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 53987.125
+INFO:root:Signal.SELL, 1 @, 57863.625
+INFO:root:Signal.BUY, 1 @, 42200.375
+INFO:root:Signal.SELL, 1 @, 43827.625
+INFO:root:Signal.BUY, 1 @, 42026.375
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38808.375
+INFO:root:Signal.BUY, 1 @, 43946.125
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 23192.625
+INFO:root:Signal.SELL, 1 @, 21607.375
+INFO:root:Signal.BUY, 1 @, 20762.375
+INFO:root:Signal.SELL, 1 @, 16574.5
+INFO:root:Signal.BUY, 1 @, 17722.625
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 39.7 kB received in 382 messages, session time 153 s.
+INFO:ib_insync.client:Disconnecting
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 11...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 53987.125
+INFO:root:Signal.SELL, 1 @, 57863.625
+INFO:root:Signal.BUY, 1 @, 42200.375
+INFO:root:Signal.SELL, 1 @, 43827.625
+INFO:root:Signal.BUY, 1 @, 42026.375
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38808.375
+INFO:root:Signal.BUY, 1 @, 43946.125
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 23192.625
+INFO:root:Signal.SELL, 1 @, 21607.375
+INFO:root:Signal.BUY, 1 @, 20762.375
+INFO:root:Signal.SELL, 1 @, 16574.5
+INFO:root:Signal.BUY, 1 @, 17714.875
+ERROR:ib_insync.client:Peer closed connection.
+ERROR:ib_insync.client:Peer closed connection.
+ERROR:ib_insync.client:Peer closed connection.
+ERROR:ib_insync.client:Peer closed connection.
