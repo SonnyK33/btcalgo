@@ -1,0 +1,895 @@
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 1...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 53987.125
+INFO:root:Signal.SELL, 1 @, 57863.625
+INFO:root:Signal.BUY, 1 @, 42200.375
+INFO:root:Signal.SELL, 1 @, 43827.625
+INFO:root:Signal.BUY, 1 @, 42026.375
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38808.375
+INFO:root:Signal.BUY, 1 @, 43946.125
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 23192.625
+INFO:root:Signal.SELL, 1 @, 21607.375
+INFO:root:Signal.BUY, 1 @, 20762.375
+INFO:root:Signal.SELL, 1 @, 16574.5
+INFO:root:Signal.BUY, 1 @, 17417.625
+INFO:root:Signal.SELL, 1 @, 16597.375
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 2...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 3...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 40.4 kB received in 385 messages, session time 152 s.
+INFO:ib_insync.client:Disconnecting
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 4...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 5...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 6...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 7...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 8...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 9...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 10...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 11...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 12...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 13...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 14...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 15...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 16...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48094.875
+INFO:root:Signal.SELL, 1 @, 43873.125
+INFO:root:Signal.BUY, 1 @, 43586.625
+INFO:root:Signal.SELL, 1 @, 59103.625
+INFO:root:Signal.BUY, 1 @, 61353.875
+INFO:root:Signal.SELL, 1 @, 61271.875
+INFO:root:Signal.BUY, 1 @, 66084.875
+INFO:root:Signal.SELL, 1 @, 63934.625
+INFO:root:Signal.BUY, 1 @, 48973.625
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 39747.875
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 39844.375
+INFO:root:Signal.SELL, 1 @, 36326.625
+INFO:root:Signal.BUY, 1 @, 30623.625
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 30270.625
+INFO:root:Signal.SELL, 1 @, 29553.125
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 30121.125
+INFO:root:Signal.BUY, 1 @, 21815.625
+INFO:root:Signal.SELL, 1 @, 20491.0
+INFO:root:Signal.BUY, 1 @, 20593.875
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 23284.375
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 19543.625
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 19528.375
+INFO:root:Signal.SELL, 1 @, 19213.375
+INFO:root:Signal.BUY, 1 @, 19343.125
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17095.375
+INFO:root:Signal.SELL, 1 @, 16827.375
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16798.125
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 17...
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 41.5 kB received in 424 messages, session time 2.46 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 41.2 kB received in 415 messages, session time 1.92 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 41.2 kB received in 415 messages, session time 1.85 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 41.2 kB received in 412 messages, session time 1.73 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 41.1 kB received in 409 messages, session time 1.62 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 185 B sent in 8 messages, 41.3 kB received in 409 messages, session time 1.57 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 41.0 kB received in 406 messages, session time 1.40 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.8 kB received in 400 messages, session time 1.02 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.8 kB received in 397 messages, session time 904 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.8 kB received in 397 messages, session time 746 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.6 kB received in 391 messages, session time 559 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.6 kB received in 391 messages, session time 384 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.5 kB received in 388 messages, session time 287 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 60436.875
+INFO:root:Signal.SELL, 1 @, 58010.5
+INFO:root:Signal.BUY, 1 @, 44175.75
+INFO:root:Signal.SELL, 1 @, 42347.625
+INFO:root:Signal.BUY, 1 @, 44163.375
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 42738.875
+INFO:root:Signal.BUY, 1 @, 23408.625
+INFO:root:Signal.SELL, 1 @, 22599.5
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 20016.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 17417.625
+INFO:root:Signal.BUY, 1 @, 17209.875
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 18...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 60436.875
+INFO:root:Signal.SELL, 1 @, 58010.5
+INFO:root:Signal.BUY, 1 @, 44175.75
+INFO:root:Signal.SELL, 1 @, 42347.625
+INFO:root:Signal.BUY, 1 @, 44163.375
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 42738.875
+INFO:root:Signal.BUY, 1 @, 23408.625
+INFO:root:Signal.SELL, 1 @, 22599.5
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 20016.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 17417.625
+INFO:root:Signal.BUY, 1 @, 17209.875
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 18...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+ERROR:ib_insync.client:Peer closed connection. clientId 18 already in use?
+INFO:ib_insync.client:Disconnecting
+ERROR:ib_insync.client:API connection failed: TimeoutError()
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 19...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 20...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 21...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 53987.125
+INFO:root:Signal.SELL, 1 @, 57863.625
+INFO:root:Signal.BUY, 1 @, 42200.375
+INFO:root:Signal.SELL, 1 @, 43827.625
+INFO:root:Signal.BUY, 1 @, 42026.375
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38808.375
+INFO:root:Signal.BUY, 1 @, 43946.125
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 23192.625
+INFO:root:Signal.SELL, 1 @, 21607.375
+INFO:root:Signal.BUY, 1 @, 20762.375
+INFO:root:Signal.SELL, 1 @, 16574.5
+INFO:root:Signal.BUY, 1 @, 17417.625
+INFO:root:Signal.SELL, 1 @, 16597.375
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 22...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 23...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 24...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 51.8 kB received in 666 messages, session time 4.60 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 51.9 kB received in 669 messages, session time 4.70 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 52.7 kB received in 699 messages, session time 6.43 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 41.0 kB received in 410 messages, session time 1.25 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 41.0 kB received in 410 messages, session time 1.17 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.9 kB received in 406 messages, session time 1.08 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.7 kB received in 398 messages, session time 618 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.6 kB received in 394 messages, session time 539 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 40.5 kB received in 386 messages, session time 74.7 s.
+INFO:ib_insync.client:Disconnecting
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 25...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 26...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 27...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 41.5 kB received in 430 messages, session time 2.04 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 41.2 kB received in 418 messages, session time 1.54 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 41.1 kB received in 414 messages, session time 1.44 ks.
+INFO:ib_insync.client:Disconnecting
