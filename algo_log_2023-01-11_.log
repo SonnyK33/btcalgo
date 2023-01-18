@@ -1,0 +1,288 @@
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 27...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.BUY, 1 @, 48038.25
+INFO:root:Signal.SELL, 1 @, 59758.5
+INFO:root:Signal.BUY, 1 @, 51000.125
+INFO:root:Signal.SELL, 1 @, 47813.375
+INFO:root:Signal.BUY, 1 @, 40600.875
+INFO:root:Signal.SELL, 1 @, 40898.125
+INFO:root:Signal.BUY, 1 @, 41927.875
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 39641.125
+INFO:root:Signal.BUY, 1 @, 40893.125
+INFO:root:Signal.SELL, 1 @, 43758.125
+INFO:root:Signal.BUY, 1 @, 31617.125
+INFO:root:Signal.SELL, 1 @, 30093.375
+INFO:root:Signal.BUY, 1 @, 31450.625
+INFO:root:Signal.SELL, 1 @, 31041.375
+INFO:root:Signal.BUY, 1 @, 21613.25
+INFO:root:Signal.SELL, 1 @, 21891.125
+INFO:root:Signal.BUY, 1 @, 22764.375
+INFO:root:Signal.SELL, 1 @, 22460.375
+INFO:root:Signal.BUY, 1 @, 22947.875
+INFO:root:Signal.SELL, 1 @, 21340.625
+INFO:root:Signal.BUY, 1 @, 21311.125
+INFO:root:Signal.SELL, 1 @, 20290.125
+INFO:root:Signal.BUY, 1 @, 20226.125
+INFO:root:Signal.SELL, 1 @, 19462.125
+INFO:root:Signal.BUY, 1 @, 20272.375
+INFO:root:Signal.SELL, 1 @, 18166.125
+INFO:root:Signal.BUY, 1 @, 17201.5
+INFO:root:Signal.SELL, 1 @, 17106.125
+INFO:root:Signal.BUY, 1 @, 17752.625
+INFO:root:Signal.SELL, 1 @, 16882.375
+INFO:root:Signal.BUY, 1 @, 16854.125
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 27...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+ERROR:ib_insync.client:Peer closed connection. clientId 27 already in use?
+INFO:ib_insync.client:Disconnecting
+ERROR:ib_insync.client:API connection failed: TimeoutError()
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 2...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:Signal.SELL, 1 @, 57863.625
+INFO:root:Signal.BUY, 1 @, 42200.375
+INFO:root:Signal.SELL, 1 @, 43827.625
+INFO:root:Signal.BUY, 1 @, 42026.375
+INFO:root:Signal.SELL, 1 @, 39510.875
+INFO:root:Signal.BUY, 1 @, 41816.375
+INFO:root:Signal.SELL, 1 @, 38808.375
+INFO:root:Signal.BUY, 1 @, 43946.125
+INFO:root:Signal.SELL, 1 @, 40323.625
+INFO:root:Signal.BUY, 1 @, 23192.625
+INFO:root:Signal.SELL, 1 @, 21607.375
+INFO:root:Signal.BUY, 1 @, 20762.375
+INFO:root:Signal.SELL, 1 @, 16574.5
+INFO:root:Signal.BUY, 1 @, 17417.625
+INFO:root:Signal.SELL, 1 @, 16597.375
+INFO:root:Signal.BUY, 1 @, 18189.875
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usopt
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usopt
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:jfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:eufarmnj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:eufarmnj
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usopt
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usopt
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usopt
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.usopt
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.jfarm
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.jfarm
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.jfarm
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.jfarm
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.eufarmnj
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.eufarmnj
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.eufarmnj
+INFO:ib_insync.wrapper:Warning 2108, reqId -1: Market data farm connection is inactive but should be available upon demand.eufarmnj
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 183 B sent in 8 messages, 51.9 kB received in 644 messages, session time 3.60 ks.
+INFO:ib_insync.client:Disconnecting
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 4...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+ERROR:ib_insync.wrapper:Error 162, reqId 8: Historical Market Data Service error message:No market data permissions for AMEX STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='SPY', exchange='SMART', currency='USD')
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 5...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.ib:Synchronization complete
+ERROR:ib_insync.wrapper:Error 162, reqId 7: Historical Market Data Service error message:No market data permissions for AMEX STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='SPY', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 8: Historical Market Data Service error message:No market data permissions for AMEX STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='SPY', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 9: Historical Market Data Service error message:No market data permissions for AMEX STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='SPY', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 10: Historical Market Data Service error message:No market data permissions for NYSE STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='IBM', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 12: Historical Market Data Service error message:No market data permissions for NYSE STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='IBM', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 13: Historical Market Data Service error message:No market data permissions for ISLAND STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='TSLA', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 14: Historical Market Data Service error message:No market data permissions for NYSE STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='IBM', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 15: Historical Market Data Service error message:No market data permissions for NYSE STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='IBM', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 16: Historical Market Data Service error message:No market data permissions for NYSE STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='IBM', exchange='SMART', currency='USD')
+ERROR:ib_insync.wrapper:Error 162, reqId 17: Historical Market Data Service error message:No market data permissions for NYSE STK. Requested market data requires additional subscription for API. See link in 'Market Data Connections' dialog for more details., contract: Stock(symbol='IBM', exchange='SMART', currency='USD')
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 5...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+ERROR:ib_insync.client:Peer closed connection. clientId 5 already in use?
+INFO:ib_insync.client:Disconnecting
+ERROR:ib_insync.client:API connection failed: TimeoutError()
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 6...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 7...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 8...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 9...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 10...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 182 B sent in 8 messages, 19.5 kB received in 382 messages, session time 77.2 s.
+INFO:ib_insync.client:Disconnecting
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 11...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 12...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 184 B sent in 8 messages, 36.1 kB received in 382 messages, session time 127 s.
+INFO:ib_insync.client:Disconnecting
+INFO:root:EMAverage called
+INFO:root:MovingAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 13...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.ib:Synchronization complete
