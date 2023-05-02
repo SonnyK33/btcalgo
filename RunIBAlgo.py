@@ -9,6 +9,7 @@ from enum import Enum
 import datetime
 import logging
 import math
+import time
 import pytz
 
 
@@ -41,11 +42,11 @@ def PrintFunction(fn):
     
 
 class Strategy():
-    def __init__(self, ib, client_id: int, contract_lst: Contract,
+    def __init__(self, ib, client_id: int, contract: Contract,
                  paper_trading: bool = True):
         self.client_id = client_id
         self.ib = ib     
-        self.contract_lst = contract_lst
+        self.contract = contract
         self.paper_trading=paper_trading
         self.sentiment = dict()
         self.signal = dict()
@@ -56,21 +57,23 @@ class Strategy():
           
 
     def ConnectIB(self):
-        self.ib.connect('127.0.0.1', 7497, self.client_id)
+#         self.ib.connect('127.0.0.1', 7497, self.client_id)
+        self.ib.connect()
+        time.sleep(1)
         
     def QualifyContracts(self):        
-        self.ib.qualifyContracts(*contract_lst)
+        self.ib.qualifyContracts(contract)
         
     def SubscribeData(self):
         print('subscribing to data')
-        for contract in self.contract_lst:
-            self.ib.reqMktData(contract)
+#         for contract in self.contract_lst:
+        self.ib.reqMktData(contract)
             
     def GetBars(self, duration, barSize, endDate=""):
         print('getting bars')
-        print(self.contract_lst[0])
+        print(self.contract)
         bars = self.ib.reqHistoricalData(
-            contract = self.contract_lst[0],
+            contract = self.contract,
             endDateTime=endDate,
             durationStr=duration,
             barSizeSetting=barSize,
@@ -111,7 +114,8 @@ class Strategy():
         df = self.strategy(**self.strategy_params)     
         display(df)
         
-        #calculate PnL       
+        #calculate PnL
+        
         
             
     
@@ -160,16 +164,23 @@ class Strategy():
                   
     def tradeReport(self):
         time_lst=[tr.time for tr in self.ib.fills()]
-        time_str = [i.strftime("%H:%M:%S") for i in time_lst]        
+        time_str = [i.strftime("%H:%M:%S") for i in time_lst]
+        print('self',self.ib)
+        print('times:', time_lst)
+        print('fills:', self.ib.fills())
+        print([tr.commissionReport for tr in self.ib.fills()])
         df_PnL = util.df([tr.commissionReport for tr in self.ib.fills()])[["execId", "realizedPNL"]].set_index("execId")
         df_PnL["Time"] = time_str
         df_PnL["Cum PnL"] = df_PnL["realizedPNL"].cumsum()
         df_PnL.set_index("Time", inplace=True)
+        display(df_PnL)
         return df_PnL
     
     def plotCumPnL(self, df):
         plt.plot(df["Cum PnL"])
-        
+   
+ 
+    
     def SetSentiment(self, current_sentiment):                 
         print('set sentiment')
         if self.sentiment.get(self.strategy.__name__) is None:
@@ -245,7 +256,7 @@ class Strategy():
         self.signal_dict['EMA'] = self.EMA
         self.SetSentiment(current_sentiment_EMA)                       
 
-    
+
      
         
     @LogFunctionCall
@@ -279,14 +290,48 @@ class Strategy():
         self.strategy_params['self'] = self
         
         
-def Main():
+# def Main():
+    
+if __name__ == "__main__":    
+    print("starting algo")
+    session_start = pd.to_datetime(datetime.datetime.utcnow()).tz_localize("utc")
+    print("start time:", session_start)
+    run_time_minutes = float(input("how many minutes to run?"))
+#     run_time_minutes = 1
+    timedelta = datetime.timedelta(minutes=run_time_minutes)
+    end_time = session_start + timedelta    
+     
+    
     ib = IB()
     contract1 = Future('NQ', '20230616', 'CME')
     contract2 = Future('ES', '20230616', 'CME')
     contract3 = Forex('EURUSD')
-    contract_lst = [contract1]
-    S = Strategy(ib, client_id=10, contract_lst=contract_lst, paper_trading=False)
+    
+    contract = contract1
+    S = Strategy(ib, client_id=1, contract=contract, paper_trading=False)
     S.SetStrategy('SMA',low=5,high=20)
     
     bars = S.GetBars(duration='1 D', barSize='5 secs', endDate="")
     bars.updateEvent += S.onBarUpdate
+    
+    while True:
+        ib.sleep(5)
+        current_time = pd.to_datetime(datetime.datetime.utcnow()).tz_localize("utc")
+    #     eastern_time = session_start.tz_convert(pytz.timezone('US/Eastern'))        
+        if current_time >= end_time:
+            S.executeTrade(target=0, contract=contract)
+            S.cancelBars(bars) 
+            ib.sleep(10)
+#             print('account summary:', ib.accountSummary())            
+            start_time = session_start
+#             print('trades', S.ib.trades())        
+        
+            S.tradeReport()
+            print("session stopped")
+            ib.disconnect()
+            break
+        else:
+            pass
+    
+    ib.disconnect()
+        

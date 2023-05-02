@@ -1,0 +1,1051 @@
+INFO:root:SMA called
+INFO:root:EMAverage called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 1...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 176
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=CFD(conId=143916318, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, avgCost=1.0958)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Stock(conId=14171, symbol='LHA', exchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, avgCost=11.00555)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.098825, marketValue=-1098.82, averageCost=1.0958, unrealizedPNL=-3.02, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Stock(conId=14171, symbol='LHA', right='0', primaryExchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, marketPrice=9.6920004, marketValue=19.38, averageCost=11.00555, unrealizedPNL=-2.63, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13281.6503906, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-811.0, account='DU1003749')
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '13', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.6450398d.01.01', '20230501 20:53:39 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13272.75', '365975968', '3', '0', '1', '13272.75', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '14', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503990.01.01', '20230501 20:54:14 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13273.75', '365975969', '3', '0', '1', '13273.75', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '19', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.645039ff.01.01', '20230501 21:09:13 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13278.75', '365975972', '3', '0', '1', '13278.75', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '20', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a02.01.01', '20230501 21:09:33 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13277.00', '365975973', '3', '0', '1', '13277.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '20', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a03.01.01', '20230501 21:09:33 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13263.75', '365975973', '3', '0', '2', '13270.375', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '21', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a0b.01.01', '20230501 21:10:13 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13278.25', '365975974', '3', '0', '1', '13278.25', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '26', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a28.01.01', '20230501 21:15:03 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13279.50', '365975981', '3', '0', '1', '13279.50', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '27', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a29.01.01', '20230501 21:15:03 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13292.75', '365975982', '3', '0', '1', '13292.75', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '28', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a2a.01.01', '20230501 21:15:06 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13278.75', '365975983', '3', '0', '1', '13278.75', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '29', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a32.01.01', '20230501 21:16:03 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13280.25', '365975984', '3', '0', '1', '13280.25', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '34', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a6b.01.01', '20230501 21:19:47 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13288.75', '365975997', '3', '0', '1', '13288.75', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '35', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a74.01.01', '20230501 21:20:17 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13289.00', '365975998', '3', '0', '1', '13289.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '40', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a97.01.01', '20230501 21:23:14 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13292.00', '365976011', '3', '0', '1', '13292.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '41', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a98.01.01', '20230501 21:23:14 America/New_York', 'DU1003749', 'CME', 'BOT', '2', '13292.50', '365976012', '3', '0', '2', '13292.50', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '42', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503a9b.01.01', '20230501 21:23:44 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13292.00', '365976013', '3', '0', '1', '13292.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlINFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=1.0, avgCost=265665.0)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=1.0, avgCost=265667.2)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.09887505, marketValue=-1098.88, averageCost=1.0958, unrealizedPNL=-3.08, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=1.0, marketPrice=13282.9003906, marketValue=265658.01, averageCost=265667.2, unrealizedPNL=-9.19, realizedPNL=-811.0, account='DU1003749')
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13283.51171875, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.099025, marketValue=-1099.03, averageCost=1.0958, unrealizedPNL=-3.23, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13290.11035155, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.098925, marketValue=-1098.92, averageCost=1.0958, unrealizedPNL=-3.12, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13286.75, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.09877505, marketValue=-1098.78, averageCost=1.0958, unrealizedPNL=-2.98, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13285.38964845, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13286.2451172, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.098925, marketValue=-1098.92, averageCost=1.0958, unrealizedPNL=-3.12, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13289.25683595, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13290.0, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.098825, marketValue=-1098.82, averageCost=1.0958, unrealizedPNL=-3.02, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13288.25, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.09887505, marketValue=-1098.88, averageCost=1.0958, unrealizedPNL=-3.08, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13289.8496094, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13288.1503906, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.098925, marketValue=-1098.92, averageCost=1.0958, unrealizedPNL=-3.12, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13290.5, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+ above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '42', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503ab7.01.01', '20230501 21:28:55 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13292.00', '365976049', '1', '0', '1', '13292.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '47', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503ac5.01.01', '20230501 21:30:56 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13289.25', '365976069', '1', '0', '1', '13289.25', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '48', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503ac7.01.01', '20230501 21:31:11 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13289.75', '365976070', '1', '0', '1', '13289.75', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '53', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503b7c.01.01', '20230501 21:53:49 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13289.25', '365976113', '1', '0', '1', '13289.25', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '54', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503b7e.01.01', '20230501 21:53:54 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13288.50', '365976114', '1', '0', '1', '13288.50', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '59', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503bab.01.01', '20230501 22:01:09 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13289.00', '365976161', '1', '0', '1', '13289.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '60', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503bb0.01.01', '20230501 22:01:16 America/New_York', 'DU1003749', 'CME', 'SLD', '2', '13288.00', '365976162', '1', '0', '2', '13288.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '61', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503bb1.01.01', '20230501 22:01:24 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13289.00', '365976163', '1', '0', '1', '13289.00', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '66', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503bc4.01.01', '20230501 22:04:25 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13286.50', '365976190', '1', '0', '1', '13286.50', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '67', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503bc5.01.01', '20230501 22:04:40 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13287.50', '365976191', '1', '0', '1', '13287.50', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.ib:placeOrder: New order Trade(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), order=MarketOrder(orderId=72, clientId=1, action='BUY', totalQuantity=1), orderStatus=OrderStatus(orderId=72, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 22, 469519, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+INFO:ib_insync.wrapper:orderStatus: Trade(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), order=MarketOrder(orderId=72, clientId=1, permId=365976222, action='BUY', totalQuantity=1.0, lmtPrice=13283.25, auxPrice=0.0), orderStatus=OrderStatus(orderId=72, status='PreSubmitted', filled=0.0, remaining=1.0, avgFillPrice=0.0, permId=365976222, parentId=0, lastFillPrice=0.0, clientId=1, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 22, 469519, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 22, 506556, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=1.0, avgCost=265665.0)
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '-1', '72', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503c01.01.01', '20230501 22:12:14 America/New_York', 'DU1003749', 'CME', 'BOT', '1', '13283.25', '365976222', '1', '0', '1', '13283.25', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+INFO:ib_insync.wrapper:orderStatus: Trade(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), order=MarketOrder(orderId=72, clientId=1, permId=365976222, action='BUY', totalQuantity=1.0, lmtPrice=13283.25, auxPrice=0.0), orderStatus=OrderStatus(orderId=72, status='Filled', filled=1.0, remaining=0.0, avgFillPrice=13283.25, permId=365976222, parentId=0, lastFillPrice=13283.25, clientId=1, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 22, 469519, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 22, 506556, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 22, 515398, tzinfo=datetime.timezone.utc), status='Filled', message='', errorCode=0)], advancedError='')
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=1.0, avgCost=265667.2)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.09887505, marketValue=-1098.88, averageCost=1.0958, unrealizedPNL=-3.08, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=1.0, marketPrice=13282.9003906, marketValue=265658.01, averageCost=265667.2, unrealizedPNL=-9.19, realizedPNL=-811.0, account='DU1003749')
+INFO:ib_insync.ib:placeOrder: New order Trade(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), order=MarketOrder(orderId=73, clientId=1, action='SELL', totalQuantity=1.0), orderStatus=OrderStatus(orderId=73, status='PendingSubmit', filled=0.0, remaining=0.0, avgFillPrice=0.0, permId=0, parentId=0, lastFillPrice=0.0, clientId=0, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 37, 314723, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0)], advancedError='')
+INFO:ib_insync.wrapper:orderStatus: Trade(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), order=MarketOrder(orderId=73, clientId=1, permId=365976223, action='SELL', totalQuantity=1.0, lmtPrice=13283.25, auxPrice=0.0), orderStatus=OrderStatus(orderId=73, status='PreSubmitted', filled=0.0, remaining=1.0, avgFillPrice=0.0, permId=365976223, parentId=0, lastFillPrice=0.0, clientId=1, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 37, 314723, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 37, 404028, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0)], advancedError='')
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+ERROR:ib_insync.Decoder:Error handling fields: ['11', '-1', '73', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503c02.01.01', '20230501 22:12:29 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13283.25', '365976223', '1', '0', '1', '13283.25', '', '', '', '', '1']
+Traceback (most recent call last):
+  File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
+    return importlib.resources.open_binary(package_name, resource_name)
+  File "C:\Python310\lib\importlib\resources.py", line 43, in open_binary
+    package = _common.get_package(package)
+  File "C:\Python310\lib\importlib\_common.py", line 66, in get_package
+    resolved = resolve(package)
+  File "C:\Python310\lib\importlib\_common.py", line 57, in resolve
+    return cand if isinstance(cand, types.ModuleType) else importlib.import_module(cand)
+  File "C:\Python310\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tzdata'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
+    handler(fields)
+  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
+    time = cast(datetime, parseIBDatetime(timeStr))
+  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
+    t = t.replace(tzinfo=ZoneInfo(s2))
+  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
+    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
+zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
+INFO:ib_insync.wrapper:orderStatus: Trade(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), order=MarketOrder(orderId=73, clientId=1, permId=365976223, action='SELL', totalQuantity=1.0, lmtPrice=13283.25, auxPrice=0.0), orderStatus=OrderStatus(orderId=73, status='Filled', filled=1.0, remaining=0.0, avgFillPrice=13283.25, permId=365976223, parentId=0, lastFillPrice=13283.25, clientId=1, whyHeld='', mktCapPrice=0.0), fills=[], log=[TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 37, 314723, tzinfo=datetime.timezone.utc), status='PendingSubmit', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 37, 404028, tzinfo=datetime.timezone.utc), status='PreSubmitted', message='', errorCode=0), TradeLogEntry(time=datetime.datetime(2023, 5, 2, 2, 12, 37, 412007, tzinfo=datetime.timezone.utc), status='Filled', message='', errorCode=0)], advancedError='')
+ERROR:ib_insync.wrapper:Error 162, reqId 71: Historical Market Data Service error message:API historical data query cancelled: 71
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, avgCost=0.0)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13283.51171875, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
