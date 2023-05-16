@@ -577,19 +577,10 @@ INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=5516
 INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13288.1503906, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
 INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.098925, marketValue=-1098.92, averageCost=1.0958, unrealizedPNL=-3.12, realizedPNL=0.0, account='DU1003749')
 INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13290.5, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
- above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 198, in interpret
-    handler(fields)
-  File "C:\Python310\lib\site-packages\ib_insync\decoder.py", line 447, in execDetails
-    time = cast(datetime, parseIBDatetime(timeStr))
-  File "C:\Python310\lib\site-packages\ib_insync\util.py", line 543, in parseIBDatetime
-    t = t.replace(tzinfo=ZoneInfo(s2))
-  File "C:\Python310\lib\zoneinfo\_common.py", line 24, in load_tzdata
-    raise ZoneInfoNotFoundError(f"No time zone found with key {key}")
-zoneinfo._common.ZoneInfoNotFoundError: 'No time zone found with key America/New_York'
-ERROR:ib_insync.Decoder:Error handling fields: ['11', '69', '42', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503ab7.01.01', '20230501 21:28:55 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13292.00', '365976049', '1', '0', '1', '13292.00', '', '', '', '', '1']
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.09872495, marketValue=-1098.72, averageCost=1.0958, unrealizedPNL=-2.92, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', right='0', multiplier='20', primaryExchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ'), position=0.0, marketPrice=13288.7607422, marketValue=0.0, averageCost=0.0, unrealizedPNL=0.0, realizedPNL=-815.4, account='DU1003749')
+ERROR:ib_insync.client:Peer closed connection.
+9', '42', '551601533', 'NQ', 'FUT', '20230616', '0.0', '', '20', 'CME', 'USD', 'NQM3', 'NQ', '0000e1a7.64503ab7.01.01', '20230501 21:28:55 America/New_York', 'DU1003749', 'CME', 'SLD', '1', '13292.00', '365976049', '1', '0', '1', '13292.00', '', '', '', '', '1']
 Traceback (most recent call last):
   File "C:\Python310\lib\zoneinfo\_common.py", line 12, in load_tzdata
     return importlib.resources.open_binary(package_name, resource_name)
