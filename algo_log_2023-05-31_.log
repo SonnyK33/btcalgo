@@ -1,0 +1,96 @@
+INFO:root:SMA called
+INFO:root:EMA called
+INFO:root:SignalProcess called
+INFO:root:SMA called
+INFO:root:EMA called
+INFO:root:SignalProcess called
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 1...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=CFD(conId=143916318, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, avgCost=1.0958)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Stock(conId=14171, symbol='LHA', exchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, avgCost=11.00555)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.06824995, marketValue=-1068.25, averageCost=1.0958, unrealizedPNL=27.55, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Stock(conId=14171, symbol='LHA', right='0', primaryExchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, marketPrice=9.151, marketValue=18.3, averageCost=11.00555, unrealizedPNL=-3.71, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 161 B sent in 8 messages, 22.0 kB received in 440 messages, session time 2.43 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.client:Disconnected.
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 1...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=CFD(conId=143916318, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, avgCost=1.0958)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Stock(conId=14171, symbol='LHA', exchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, avgCost=11.00555)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.06824995, marketValue=-1068.25, averageCost=1.0958, unrealizedPNL=27.55, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Stock(conId=14171, symbol='LHA', right='0', primaryExchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, marketPrice=9.151, marketValue=18.3, averageCost=11.00555, unrealizedPNL=-3.71, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 161 B sent in 8 messages, 22.0 kB received in 440 messages, session time 2.01 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.client:Disconnected.
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 1...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=CFD(conId=143916318, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, avgCost=1.0958)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Stock(conId=14171, symbol='LHA', exchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, avgCost=11.00555)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.06824995, marketValue=-1068.25, averageCost=1.0958, unrealizedPNL=27.55, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Stock(conId=14171, symbol='LHA', right='0', primaryExchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, marketPrice=9.151, marketValue=18.3, averageCost=11.00555, unrealizedPNL=-3.71, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.ib:Disconnecting from 127.0.0.1:7497, 161 B sent in 8 messages, 22.0 kB received in 440 messages, session time 1.10 s.
+INFO:ib_insync.client:Disconnecting
+INFO:ib_insync.client:Disconnected.
+INFO:ib_insync.client:Connecting to 127.0.0.1:7497 with clientId 1...
+INFO:ib_insync.client:Connected
+INFO:ib_insync.client:Logged on to server version 163
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:cashfarm
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:uscrypto
+INFO:ib_insync.client:API connection ready
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfuture
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm.nj
+INFO:ib_insync.wrapper:Warning 2104, reqId -1: Market data farm connection is OK:usfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:euhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:cashhmds
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:fundfarm
+INFO:ib_insync.wrapper:Warning 2106, reqId -1: HMDS data farm connection is OK:ushmds
+INFO:ib_insync.wrapper:Warning 2158, reqId -1: Sec-def data farm connection is OK:secdefnj
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=CFD(conId=143916318, symbol='EUR', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, avgCost=1.0958)
+INFO:ib_insync.wrapper:position: Position(account='DU1003749', contract=Stock(conId=14171, symbol='LHA', exchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, avgCost=11.00555)
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.06824995, marketValue=-1068.25, averageCost=1.0958, unrealizedPNL=27.55, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Stock(conId=14171, symbol='LHA', right='0', primaryExchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, marketPrice=9.151, marketValue=18.3, averageCost=11.00555, unrealizedPNL=-3.71, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.ib:Synchronization complete
+INFO:ib_insync.wrapper:Warning 2174, reqId 157: Warning: You submitted request with date-time attributes without explicit time zone. Please switch to use yyyymmdd-hh:mm:ss in UTC or use instrument time zone, like US/Eastern. Implied time zone functionality will be removed in the next API release, contract: Future(conId=551601533, symbol='NQ', lastTradeDateOrContractMonth='20230616', multiplier='20', exchange='CME', currency='USD', localSymbol='NQM3', tradingClass='NQ')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.068025, marketValue=-1068.02, averageCost=1.0958, unrealizedPNL=27.78, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=Stock(conId=14171, symbol='LHA', right='0', primaryExchange='IBIS', currency='EUR', localSymbol='LHA', tradingClass='XETRA'), position=2.0, marketPrice=9.151, marketValue=18.3, averageCost=11.00555, unrealizedPNL=-3.71, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.068725, marketValue=-1068.72, averageCost=1.0958, unrealizedPNL=27.08, realizedPNL=0.0, account='DU1003749')
+INFO:ib_insync.wrapper:updatePortfolio: PortfolioItem(contract=CFD(conId=143916318, symbol='EUR', right='0', currency='USD', localSymbol='EUR.USD', tradingClass='EUR.USD'), position=-1000.0, marketPrice=1.068825, marketValue=-1068.83, averageCost=1.0958, unrealizedPNL=26.97, realizedPNL=0.0, account='DU1003749')
